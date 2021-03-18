@@ -1,0 +1,17 @@
+// Project Variables 
+project_id                      = "your-project-id"
+region                          = "us-east1"
+
+// Network Variables
+// Reference https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#defaults_limits
+network_name                    = "gke-vpc"
+gke_network_subnet_cidr         = "10.1.2.0/24"
+ip_cidr_range_pods              = "172.16.0.0/20"
+ip_cidr_range_services          = "172.16.16.0/20"
+
+// GKE Variables
+cluster_name                    = "test-cluster"
+compute_engine_service_account  = null
+skip_provisioners               = false
+enable_binary_authorization     = false
+release_channel                 = "RAPID"
